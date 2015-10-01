@@ -45,6 +45,7 @@ Para el ejemplo anterior se asumió que se está trabajando sobre la rama master
 Para observar todos los commit que se han hecho en la rama:
 ```
 git log
+
 #el output será algo así:
 commit 48ead24ab3c3c940736ecf65064019b5a790619b
 Author: Gustavo <ginzunza@rebuss.cl>
