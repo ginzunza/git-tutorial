@@ -1,6 +1,6 @@
 # git_tutorial
 Comandos fundamentales para comenzar a trabajar con Git
-#adf
+#Agregando cambios
 ```git
 git add --all
 ```
