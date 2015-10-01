@@ -17,7 +17,7 @@ En el caso de que nuestra rama fuera "master", el código anterior quedaría de 
 ```
 git push origin master
 ```
-Si quieremos saber en cuál rama nos encontramos, para saber donde subir nuestros cambios, debemos escribir el siguiente comando:
+Si queremos saber en cuál rama nos encontramos, para saber donde subir nuestros cambios, debemos escribir el siguiente comando:
 ```
 git branch
 ```
@@ -27,4 +27,4 @@ Una vez escrito el comando anterior, visualizaremos algo parecido a lo siguiente
   rama2
 * master
 ```
-En donde se encuentra el "*" 
+El "*" indica en cuál rama nos encontramos, en el caso del ejemplo, estamos en la rama "master"
