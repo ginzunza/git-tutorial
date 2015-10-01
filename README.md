@@ -99,3 +99,7 @@ git merge rama-a-copiar
 ```
 git branch nombre-nueva-rama
 ```
+6.- Eliminar una rama sólo de manera local
+ ```
+git branch -d nombre-rama
+```
