@@ -33,7 +33,7 @@ Si quisieramos cambiar de rama, debemos escribir el siguiente código:
 ```
 git checkout nombre-rama
 ```
-En base a las ramas listadas en el ejemplo anterior, el comando podría ser de la siguiente manera:
+En base a las ramas listadas en el ejemplo anterior, el comando sería de la siguiente manera:
 ```
 git checkout rama2
 ```
