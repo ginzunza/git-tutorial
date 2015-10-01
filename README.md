@@ -95,7 +95,7 @@ git merge -s ours master
 git checkout master 
 git merge rama-a-copiar
 ```
-5.- Crear una rama, basada en la rama que nos encontramos
+5.- Crear una rama basada en la rama que nos encontramos
 ```
 git branch nombre-nueva-rama
 ```
