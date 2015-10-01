@@ -74,7 +74,7 @@ El código del checkout fue sacado del primer output del "git log" anterior. El 
 ```
 git checkout nombre-rama
 ```
-2.- Descartar cambios sin commit y eliminar archivos no guardados en el proyecto<br/>
+2.- Descartar cambios sin commit y eliminar archivos agregados al proyecto sin commitear<br/>
 Para descartar cambios que no queremos unir al proyecto, mediante commit, debemos escribir el siguiente código:
 ```
 git stash
