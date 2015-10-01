@@ -69,4 +69,7 @@ Si queremos observar cómo se veía nuestro proyecto en cierto commit, sin hacer
 ```
 git checkout 48ead24ab3c3c940736ecf65064019b5a790619b
 ```
-El código del checkout fue sacado del primer output del "git log" anterior
+El código del checkout fue sacado del primer output del "git log" anterior. El checkout nos generará una rama temporal, en donde podremos visualizar cómo era nuestro proyecto en el commit seleccionado. Para volver a nuestra rama, sin guardar ningún cambio, basta con escribir:
+```
+git checkout nombre-rama
+```
