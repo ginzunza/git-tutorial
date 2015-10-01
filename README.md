@@ -7,5 +7,5 @@ git add --all
 ```
 Luego, debemos hacer un comentario que explique, en términos globales, lo que se modificó. Para ello debemos escribir el siguiente comando:
 ```
-git commit -m "aca tu comentario"
+git commit -m "acá tu comentario"
 ```
