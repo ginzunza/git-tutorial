@@ -36,7 +36,7 @@ En base a las ramas listadas en el ejemplo anterior, el comando sería de la sig
 ```
 git checkout rama2
 ```
-Si tenemos otro colaborador en nuestro proyecto y queremos obtener los cambios que el a envíado a la rama remota, debemos escribir el siguiente código:
+Si tenemos otro colaborador en nuestro proyecto y queremos obtener los cambios que él a envíado a la rama remota, debemos escribir el siguiente código:
 ```
 git pull origin master
 ```
