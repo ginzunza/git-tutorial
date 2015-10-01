@@ -42,7 +42,7 @@ git pull origin master
 ```
 Para el ejemplo anterior se asumió que se está trabajando sobre la rama master.
 #Comandos útiles
-Observar todos los commit que se han hecho en una rama:
+1.-Observar todos los commit que se han hecho en una rama:
 ```
 git log
 
@@ -73,4 +73,13 @@ git checkout 48ead24ab3c3c940736ecf65064019b5a790619b
 El código del checkout fue sacado del primer output del "git log" anterior. El checkout nos generará una rama temporal, en donde podremos visualizar cómo era nuestro proyecto en el commit seleccionado. Para volver a nuestra rama, sin guardar ningún cambio, basta con escribir:
 ```
 git checkout nombre-rama
+```
+2.- Descartar cambios sin commit y eliminar archivos no guardados en el proyecto
+Para descartar cambios que no queremos unir al proyecto, mediante commit, debemos escribir el siguiente código:
+```
+git stash
+```
+Para eliminar todos los archivos que se han agregado al proyecto, pero que no han sido guardados:
+```
+git clean -f -d
 ```
