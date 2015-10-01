@@ -42,3 +42,31 @@ git pull origin master
 ```
 Para el ejemplo anterior se asumió que se está trabajando sobre la rama master.
 #Comandos útiles
+Para observar todos los commit que se han hecho en la rama:
+```
+git log
+#el output será algo así:
+commit 48ead24ab3c3c940736ecf65064019b5a790619b
+Author: Gustavo <ginzunza@rebuss.cl>
+Date:   Thu Oct 1 15:47:03 2015 -0300
+
+    cambios
+
+commit d49f5b83e5b15a5b73573772c6c3ba89907d2ebe
+Author: Gustavo <ginzunza@rebuss.cl>
+Date:   Thu Oct 1 15:02:14 2015 -0300
+
+    dynamic select
+
+commit 7ba3a7beca6f07b04aa1c0e0136b106fab6159c1
+Author: Gustavo <ginzunza@rebuss.cl>
+Date:   Wed Sep 30 18:20:24 2015 -0300
+
+    trying to add a dynamic select to companies
+```
+Para dejar de visualizar los logs se debe presionar la letra "q".
+Si queremos observar cómo se veía nuestro proyecto en cierto commit, sin hacer los cambios de manera definitiva. Debemos escribir el siguiente comando:
+```
+git checkout 48ead24ab3c3c940736ecf65064019b5a790619b
+```
+El código del checkout fue sacado del primer output del "git log" anterior
