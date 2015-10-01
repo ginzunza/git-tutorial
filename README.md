@@ -36,4 +36,4 @@ En base a las ramas listadas en el ejemplo anterior, el comando sería de la sig
 ```
 git checkout rama2
 ```
-
+#Comandos útiles
