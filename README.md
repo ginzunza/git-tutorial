@@ -83,7 +83,7 @@ Para eliminar todos los archivos que se han agregado al proyecto, pero que no ha
 ```
 git clean -f -d
 ```
-3.- Copiar el contenido de una rama a otra sin hacer merge
+3.- Copiar el contenido de una rama a otra sin hacer merge <br/>
 Este comando es útil para cuando hemos avanzado mucho en una rama proveniente de master y no queremos hacer merge, dado a que se han hecho muchos cambios, lo cual podría generar muchos conflictos. Por tanto esto es equivalente a un "copy-paste" de una rama a otra. Considerando que hay una rama que se llama "rama-a-copiar" y que está también la rama master, para que master quede exactamente igual a la rama "rama-a-copiar", el código es el siguiente:
 ```
 git checkout rama-a-copiar
