@@ -79,7 +79,7 @@ Para descartar cambios que no queremos unir al proyecto, mediante commit, debemo
 ```
 git stash
 ```
-Para eliminar todos los archivos que se han agregado al proyecto, pero que no han sido guardados:
+Para eliminar todos los archivos que se han agregado al proyecto, pero que no han sido commiteados:
 ```
 git clean -f -d
 ```
