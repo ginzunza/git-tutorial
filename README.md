@@ -103,3 +103,7 @@ git branch nombre-nueva-rama
  ```
 git branch -d nombre-rama
 ```
+7.- Eliminar una rama de manera remota
+```
+git push origin --delete nombre-rama
+```
