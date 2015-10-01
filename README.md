@@ -74,7 +74,11 @@ El código del checkout fue sacado del primer output del "git log" anterior. El 
 ```
 git checkout nombre-rama
 ```
-2.- Descartar cambios sin commit y eliminar archivos agregados al proyecto sin commitear<br/>
+2.- Para descartar los cambios e ir a un commit anterior, utilizando el código del commit del ejemplo anterior, el comando es el siguiente:
+```
+git reset --HARD 48ead24ab3c3c940736ecf65064019b5a790619b
+```
+3.- Descartar cambios sin commit y eliminar archivos agregados al proyecto sin commitear<br/>
 Para descartar cambios que no queremos unir al proyecto, mediante commit, debemos escribir el siguiente código:
 ```
 git stash
@@ -83,7 +87,7 @@ Para eliminar todos los archivos que se han agregado al proyecto, pero que no ha
 ```
 git clean -f -d
 ```
-3.- Copiar el contenido de una rama a otra sin hacer merge <br/>
+4.- Copiar el contenido de una rama a otra sin hacer merge <br/>
 Este comando es útil para cuando hemos avanzado mucho en una rama proveniente de master y no queremos hacer merge, dado a que se han hecho muchos cambios, lo cual podría generar muchos conflictos. Por tanto esto es equivalente a un "copy-paste" de una rama a otra. Considerando que hay una rama que se llama "rama-a-copiar" y que está también la rama master, para que master quede exactamente igual a la rama "rama-a-copiar", el código es el siguiente:
 ```
 git checkout rama-a-copiar
