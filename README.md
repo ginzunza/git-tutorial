@@ -28,4 +28,13 @@ Una vez escrito el comando anterior, visualizaremos algo parecido a lo siguiente
   rama2
 * master
 ```
-El "*" indica en cuál rama nos encontramos, en el caso del ejemplo, estamos en la rama "master"
+El "*" indica en cuál rama nos encontramos, en el caso del ejemplo, estamos en la rama "master".
+Si quisieramos cambiar de rama, debemos escribir el siguiente código:
+```
+git checkout nombre-rama
+```
+En base a las ramas listadas en el ejemplo anterior, el comando podría ser de la siguiente manera:
+```
+git checkout rama2
+```
+
