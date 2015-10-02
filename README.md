@@ -42,6 +42,7 @@ git pull origin master
 ```
 Para el ejemplo anterior se asumió que se está trabajando sobre la rama master.
 #Comandos útiles
+##Commits
 ###Observar todos los commit que se han hecho en una rama
 ```
 git log
@@ -66,7 +67,7 @@ Date:   Wed Sep 30 18:20:24 2015 -0300
     trying to add a dynamic select to companies
 ```
 Para dejar de visualizar los logs se debe presionar la letra "q".
-Si queremos observar cómo se veía nuestro proyecto en cierto commit, sin hacer los cambios de manera definitiva. Debemos escribir el siguiente comando:
+###Observar cómo se veía nuestro proyecto en cierto commit, sin hacer los cambios de manera definitiva:
 ```
 git checkout 48ead24ab3c3c940736ecf65064019b5a790619b
 ```
@@ -74,11 +75,11 @@ El código del checkout fue sacado del primer output del "git log" anterior. El 
 ```
 git checkout nombre-rama
 ```
-2.- Para descartar los cambios e ir a un commit anterior, utilizando el código del commit del ejemplo anterior, el comando es el siguiente:
+###Descartar los cambios e ir a un commit anterior (utilizando el código del commit del ejemplo anterior):
 ```
 git reset --HARD 48ead24ab3c3c940736ecf65064019b5a790619b
 ```
-3.- Descartar cambios sin commit y eliminar archivos agregados al proyecto sin commitear<br/>
+###Descartar cambios sin commit y eliminar archivos agregados al proyecto sin commitear<br/>
 Para descartar cambios que no queremos unir al proyecto, mediante commit, debemos escribir el siguiente código:
 ```
 git stash
@@ -87,7 +88,8 @@ Para eliminar todos los archivos que se han agregado al proyecto, pero que no ha
 ```
 git clean -f -d
 ```
-4.- Copiar el contenido de una rama a otra sin hacer merge <br/>
+##Ramas
+###Copiar el contenido de una rama a otra sin hacer merge <br/>
 Este comando es útil para cuando hemos avanzado mucho en una rama proveniente de master y no queremos hacer merge, dado a que se han hecho muchos cambios, lo cual podría generar muchos conflictos. Por tanto esto es equivalente a un "copy-paste" de una rama a otra. Considerando que hay una rama que se llama "rama-a-copiar" y que está también la rama master, para que master quede exactamente igual a la rama "rama-a-copiar", el código es el siguiente:
 ```
 git checkout rama-a-copiar
@@ -95,15 +97,15 @@ git merge -s ours master
 git checkout master 
 git merge rama-a-copiar
 ```
-5.- Crear una rama basada en la rama que nos encontramos
+###Crear una rama basada en la rama que nos encontramos
 ```
 git branch nombre-nueva-rama
 ```
-6.- Eliminar una rama sólo de manera local
+###Eliminar una rama sólo de manera local
  ```
 git branch -d nombre-rama
 ```
-7.- Eliminar una rama de manera remota
+###Eliminar una rama de manera remota
 ```
 git push origin --delete nombre-rama
 ```
