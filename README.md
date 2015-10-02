@@ -43,7 +43,7 @@ git pull origin master
 Para el ejemplo anterior se asumió que se está trabajando sobre la rama master.
 #Comandos útiles
 ##Commits:
-######Observar todos los commit que se han hecho en una rama
+#####Observar todos los commit que se han hecho en una rama
 ```
 git log
 
