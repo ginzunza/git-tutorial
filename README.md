@@ -42,6 +42,10 @@ git pull origin master
 ```
 Para el ejemplo anterior se asumió que se está trabajando sobre la rama master.
 #Comandos útiles
+#####Hacer un push descartando todos los pull que estén pendientes
+```
+git push -f
+```
 ##Commits:
 #####Observar todos los commit que se han hecho en una rama
 ```
