@@ -71,6 +71,10 @@ Date:   Wed Sep 30 18:20:24 2015 -0300
     trying to add a dynamic select to companies
 ```
 Para dejar de visualizar los logs se debe presionar la letra "q".
+#####Observar mi último commit
+```
+git show --name-status
+```
 #####Observar los cambios que se hicieron en determinado commit
 ```
 git show 48ead24ab3c3c940736ecf65064019b5a790619b
