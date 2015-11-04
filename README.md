@@ -92,6 +92,10 @@ Para eliminar todos los archivos que se han agregado al proyecto, pero que no ha
 ```
 git clean -f -d
 ```
+##### Observar qué cambios se hicieron en un commit, en base al nombre de una función o variable. Para el ejemplo se utilizó el nombre de función "get_attributes"
+```
+git log -p -S get_attributes
+```
 ##Ramas:
 #####Mezclar el contenido de una rama, con el contenido de la rama en que nos encontramos<br/>
 Cabe destacar que los cambios se hacen para la rama en que nos encontramos, por tanto, para el caso del ejemplo, asumiendo que nos encontramos en la rama "master", la rama que cambiaría sería esta misma. En cambio la rama con el nombre "rama-a-mezclar" no cambiaría en nada.
