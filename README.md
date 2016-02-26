@@ -100,6 +100,7 @@ Para eliminar todos los archivos que se han agregado al proyecto, pero que no ha
 ```
 git clean -f -d
 ```
+
 ##### Observar qué cambios se hicieron en un commit, en base al nombre de una función o variable. Para el ejemplo se utilizó el nombre de función "get_attributes"
 ```
 git log -p -S get_attributes
@@ -129,4 +130,8 @@ git branch -d nombre-rama
 #####Eliminar una rama de manera remota
 ```
 git push origin --delete nombre-rama
+```
+#####Git log customizado
+```
+git log --graph --pretty=format:"%C(yellow)%h%Creset - %C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit --date=short
 ```
