@@ -42,6 +42,10 @@ git pull origin master
 ```
 Para el ejemplo anterior se asumió que se está trabajando sobre la rama master.
 #Comandos útiles
+#####Git log customizado
+```
+git log --graph --pretty=format:"%C(yellow)%h%Creset - %C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit --date=short
+```
 #####Hacer un push descartando todos los pull que estén pendientes
 ```
 git push -f
@@ -131,7 +135,4 @@ git branch -d nombre-rama
 ```
 git push origin --delete nombre-rama
 ```
-#####Git log customizado
-```
-git log --graph --pretty=format:"%C(yellow)%h%Creset - %C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit --date=short
-```
+
