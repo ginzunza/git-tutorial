@@ -136,3 +136,7 @@ git branch -d nombre-rama
 git push origin --delete nombre-rama
 ```
 
+#####Compara cambios entre dos ramas
+```
+git diff branch_1..branch_2
+```
