@@ -42,16 +42,16 @@ git pull origin master
 ```
 Para el ejemplo anterior se asumió que se está trabajando sobre la rama master.
 #Comandos útiles
-#####Git log customizado
+##### Git log customizado
 ```
 git log --graph --pretty=format:"%C(yellow)%h%Creset - %C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit --date=short
 ```
-#####Hacer un push descartando todos los pull que estén pendientes
+##### Hacer un push descartando todos los pull que estén pendientes
 ```
 git push -f
 ```
-##Commits:
-#####Observar todos los commit que se han hecho en una rama
+## Commits:
+##### Observar todos los commit que se han hecho en una rama
 ```
 git log
 
@@ -75,15 +75,15 @@ Date:   Wed Sep 30 18:20:24 2015 -0300
     trying to add a dynamic select to companies
 ```
 Para dejar de visualizar los logs se debe presionar la letra "q".
-#####Observar mi último commit
+##### Observar mi último commit
 ```
 git show --name-status
 ```
-#####Observar los cambios que se hicieron en determinado commit
+##### Observar los cambios que se hicieron en determinado commit
 ```
 git show 48ead24ab3c3c940736ecf65064019b5a790619b
 ```
-#####Observar cómo se veía nuestro proyecto en cierto commit, sin hacer los cambios de manera definitiva:
+##### Observar cómo se veía nuestro proyecto en cierto commit, sin hacer los cambios de manera definitiva:
 ```
 git checkout 48ead24ab3c3c940736ecf65064019b5a790619b
 ```
@@ -91,11 +91,11 @@ El código del checkout fue sacado del primer output del "git log" anterior. El 
 ```
 git checkout nombre-rama
 ```
-#####Descartar los cambios e ir a un commit anterior (utilizando el código del commit del ejemplo anterior):
+##### Descartar los cambios e ir a un commit anterior (utilizando el código del commit del ejemplo anterior):
 ```
 git reset --HARD 48ead24ab3c3c940736ecf65064019b5a790619b
 ```
-#####Descartar cambios sin commit y eliminar archivos agregados al proyecto sin commitear<br/>
+##### Descartar cambios sin commit y eliminar archivos agregados al proyecto sin commitear<br/>
 Para descartar cambios que no queremos unir al proyecto, mediante commit, debemos escribir el siguiente código:
 ```
 git stash
@@ -109,13 +109,13 @@ git clean -f -d
 ```
 git log -p -S get_attributes
 ```
-##Ramas:
-#####Mezclar el contenido de una rama, con el contenido de la rama en que nos encontramos<br/>
+## Ramas:
+##### Mezclar el contenido de una rama, con el contenido de la rama en que nos encontramos<br/>
 Cabe destacar que los cambios se hacen para la rama en que nos encontramos, por tanto, para el caso del ejemplo, asumiendo que nos encontramos en la rama "master", la rama que cambiaría sería esta misma. En cambio la rama con el nombre "rama-a-mezclar" no cambiaría en nada.
 ```
 git merge rama-a-mezclar
 ```
-#####Copiar el contenido de una rama a otra sin hacer merge <br/>
+##### Copiar el contenido de una rama a otra sin hacer merge <br/>
 Este comando es útil para cuando hemos avanzado mucho en una rama proveniente de master y no queremos hacer merge, dado a que se han hecho muchos cambios, lo cual podría generar muchos conflictos. Por tanto esto es equivalente a un "copy-paste" de una rama a otra. Considerando que hay una rama que se llama "rama-a-copiar" y que está también la rama master, para que master quede exactamente igual a la rama "rama-a-copiar", el código es el siguiente:
 ```
 git checkout rama-a-copiar
@@ -123,20 +123,20 @@ git merge -s ours master
 git checkout master 
 git merge rama-a-copiar
 ```
-#####Crear una rama basada en la rama que nos encontramos
+##### Crear una rama basada en la rama que nos encontramos
 ```
 git branch nombre-nueva-rama
 ```
-#####Eliminar una rama sólo de manera local
+##### Eliminar una rama sólo de manera local
  ```
 git branch -d nombre-rama
 ```
-#####Eliminar una rama de manera remota
+##### Eliminar una rama de manera remota
 ```
 git push origin --delete nombre-rama
 ```
 
-#####Comparar cambios entre dos ramas
+##### Comparar cambios entre dos ramas
 ```
 git diff branch_1..branch_2
 ```
