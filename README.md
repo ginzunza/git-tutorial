@@ -93,7 +93,7 @@ git checkout nombre-rama
 ```
 ##### Descartar los cambios e ir a un commit anterior (utilizando el código del commit del ejemplo anterior):
 ```
-git reset --HARD 48ead24ab3c3c940736ecf65064019b5a790619b
+git reset --hard 48ead24ab3c3c940736ecf65064019b5a790619b
 ```
 ##### Descartar cambios sin commit y eliminar archivos agregados al proyecto sin commitear<br/>
 Para descartar cambios que no queremos unir al proyecto, mediante commit, debemos escribir el siguiente código:
