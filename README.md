@@ -1,6 +1,6 @@
 # Tutorial de Git en Español
 Comandos fundamentales para comenzar a trabajar con Git. Este tutorial asume que ya se tiene un proyecto en Git, por lo que se ha omitido la iniciación o clonación de un proyecto existente.
-##Comandos básicos:
+## Comandos básicos:
 Una vez que hemos hecho cambios, ya sea, modificar, agregar o eliminar archivos, para incluirlos debemos escribir el siguiente comando:
 ```git
 git add --all
